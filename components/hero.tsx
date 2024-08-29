@@ -76,7 +76,7 @@ const Hero = () => {
         <Cover>
           <span className="text-xl text-orange-400 sm:text-2xl md:text-4xl xl:text-6xl">ItsFlash</span>
         </Cover>
-        <HoverMe className="pointer-events-none absolute end-4 top-6 -mr-40 hidden h-24 w-full object-cover opacity-50 dark:invert md:block" />
+        <HoverMe className="pointer-events-none absolute -mr-40 hidden h-24 w-full object-cover opacity-50 md:end-14 md:top-2 md:block xl:end-4 xl:top-6 dark:invert" />
       </div>
       <div className="animate-glow hidden h-px w-screen animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 md:block" />
       {/* </main> */}
