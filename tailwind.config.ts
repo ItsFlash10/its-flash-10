@@ -1,10 +1,8 @@
 import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-// const defaultTheme = require("tailwindcss/defaultTheme");
 
 const config: Config = {
-  darkMode: ["class"],
+  // darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +10,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      cursor: {
+        // TODO: Need to check this why the url is not working with png and its always going to the fallback
+        flash: "url(../flash-2.cur), crosshair",
+        // flash: "url(https://cdn.custom-cursor.com/db/cursor/32/Flash_Cursor.png), crosshair",
+        // flash: "url(https://cdn.custom-cursor.com/db/pointer/32/Flash_Pointer.png), crosshair",
+      },
       fontFamily: {
         sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
         display: ["var(--font-calsans)"],

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "@next/font/google";
-import LocalFont from "@next/font/local";
-import "./globals.css";
+import { Inter } from "next/font/google";
+import LocalFont from "next/font/local";
+
 import { cn } from "@/lib/utils";
+
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Satyam Shubham | ItsFlash10",
