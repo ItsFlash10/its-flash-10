@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import LocalFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 
 import { cn } from "@/lib/utils";
 
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body
         className={`bg-black ${cn(`${inter.variable} ${calSans.variable}`)} ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined} antialiased`}
       >
+        <Analytics />
         {children}
       </body>
     </html>
